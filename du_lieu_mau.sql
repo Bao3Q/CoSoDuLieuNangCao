@@ -22,7 +22,7 @@ TRUNCATE TABLE
 -- =====================================================================
 -- 1. NGUOI  (16 sinh viên N101..N116 + 8 giảng viên N201..N208)
 -- =====================================================================
-INSERT INTO nguoi (so_nguoi, ho_ten, ngay_sinh, gioi_tinh, email, so_dien_thoai) VALUES
+INSERT INTO nguoi (ma_nguoi, ho_ten, ngay_sinh, gioi_tinh, email, so_dien_thoai) VALUES
     -- Sinh viên
     ('N101', 'Nguyen Van An',      '2003-05-12', 'Nam', 'an@sv.edu.vn',       '0901234567'),
     ('N102', 'Tran Thi Binh',      '2004-01-20', 'Nu',  'binh@sv.edu.vn',     '0902234567'),
