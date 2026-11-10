@@ -1,4 +1,3 @@
--- Gợi ý: chạy trong schema riêng
 CREATE SCHEMA IF NOT EXISTS hoc_vu;
 SET search_path TO hoc_vu, public;
 
@@ -6,7 +5,7 @@ SET search_path TO hoc_vu, public;
 -- 1. NGUOI (thực thể cha)
 -- =====================================================================
 CREATE TABLE nguoi (
-    so_nguoi        VARCHAR(15)   CONSTRAINT pk_nguoi PRIMARY KEY,
+    ma_nguoi        VARCHAR(15)   CONSTRAINT pk_nguoi PRIMARY KEY,
     ho_ten          VARCHAR(150)  NOT NULL,
     ngay_sinh       DATE,
     gioi_tinh       VARCHAR(10),
@@ -63,7 +62,7 @@ CREATE TABLE giang_vien (
     ma_khoa   VARCHAR(20),
 
     CONSTRAINT fk_giang_vien_nguoi
-        FOREIGN KEY (ma_gv) REFERENCES nguoi (so_nguoi)
+        FOREIGN KEY (ma_gv) REFERENCES nguoi (ma_nguoi)
         ON UPDATE CASCADE
         ON DELETE CASCADE,
 
@@ -85,7 +84,7 @@ CREATE TABLE sinh_vien (
     gpa_tich_luy    FLOAT DEFAULT 0,
 
     CONSTRAINT fk_sinh_vien_nguoi
-        FOREIGN KEY (ma_sv) REFERENCES nguoi (so_nguoi)
+        FOREIGN KEY (ma_sv) REFERENCES nguoi (ma_nguoi)
         ON UPDATE CASCADE
         ON DELETE CASCADE,
 
@@ -240,7 +239,7 @@ CREATE TABLE ket_qua_hoc_tap (
 -- =====================================================================
 -- DỮ LIỆU DEMO (tùy chọn)
 -- =====================================================================
-INSERT INTO nguoi (so_nguoi, ho_ten, ngay_sinh, gioi_tinh, email, so_dien_thoai)
+INSERT INTO nguoi (ma_nguoi, ho_ten, ngay_sinh, gioi_tinh, email, so_dien_thoai)
 VALUES
     ('N001', 'Nguyen Van An',  '2003-05-12', 'Nam', 'an@sv.edu.vn',    '0901234567'),
     ('N002', 'Tran Thi Binh',  '2004-01-20', 'Nu',  'binh@sv.edu.vn',  '0902234567'),
