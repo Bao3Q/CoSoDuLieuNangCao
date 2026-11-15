@@ -1,0 +1,23 @@
+
+----------------- CÂU 1 -----------------
+So Luong SV Nganh CNTT: 2
+ - SV001: Nguy?n V?n An (GPA: 3.6)
+ - SV002: Tr?n Th? Bình (GPA: 3.1)
+
+----------------- CÂU 2 -----------------
+So luong hoc phan >= 3 tin chi & tiet LT >= 30: 2
+ - CS101: C? s? d? li?u nâng cao (S? TC: 4)
+ - CS102: L?p trình h??ng ??i t??ng (S? TC: 3)
+
+----------------- CÂU 3 -----------------
+So lop SV001 da dang ky: 1
+ - LHP01: CSDL Nâng cao - Nhóm 1
+
+----------------- CÂU 4 -----------------
+Diem GPA tich luy cao nhat: 3.6
+
+----------------- CÂU 5 -----------------
+So lop hoc phan co si so > 40: 1
+ - LHP01 (Si so hien tai: 45/50)
+
+>>> THUC THI THANH CONG TOAN BO TRUY VAN TREN OBJECTDB! <<<
