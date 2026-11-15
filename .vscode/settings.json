@@ -10,5 +10,13 @@
             "database": "postgres",
             "username": "postgres"
         }
-    ]
+    ],
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "e:\\Download\\explorer-2.9.6.jar",
+        "e:\\Download\\javax.persistence-api-2.2.jar",
+        "e:\\Download\\javax.transaction-api-1.3.jar",
+        "e:\\Download\\objectdb-2.9.6.jar"
+    ],
+    "java.configuration.updateBuildConfiguration": "interactive"
 }
