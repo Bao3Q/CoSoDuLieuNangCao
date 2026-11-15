@@ -1,0 +1,9 @@
+unsafe       success=100/100 (100.0%)  retry=0 errors=0  latency_avg=124.80ms p95=199.27ms  db(counter/registered/capacity)=7/16/7  overbooked=True mismatch=True
+             overbooked rounds=10/10
+for_update   success=10/100 (10.0%)  retry=0 errors=0  latency_avg=124.17ms p95=190.33ms  db(counter/registered/capacity)=7/7/7  overbooked=False mismatch=False
+             overbooked rounds=0/10
+serializable success=10/100 (10.0%)  retry=90 errors=0  latency_avg=197.93ms p95=264.08ms  db(counter/registered/capacity)=7/7/7  overbooked=False mismatch=False
+             overbooked rounds=0/10
+duplicate race success=1/2 duplicate_rejected=1/2 N107_rows=1 counter/registered/capacity=7/7/7
+EXPLAIN ANALYZE execution time: 0.164 ms
+EXPLAIN ANALYZE planning time:  2.186 ms
