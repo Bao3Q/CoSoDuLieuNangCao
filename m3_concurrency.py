@@ -1,15 +1,3 @@
-"""Run the M3 one-seat registration race against the PostgreSQL demo database.
-
-Requires psycopg 3. Uses ten distinct students to race for one seat in LHP401.
-It creates temporary IT202 prerequisite records for N109-N116, refuses conflicting
-test fixtures, then restores LHP401/LHP301 and removes only its own fixture rows.
-
-Install: python -m pip install "psycopg[binary]"
-PowerShell (optional connection settings): $env:PGDATABASE = "csdl_nc"
-                                         $env:PGUSER = "postgres"
-                                         python m3_concurrency.py --rounds 10
-Without DATABASE_URL the runner prompts for the database password without echoing it.
-"""
 
 from __future__ import annotations
 

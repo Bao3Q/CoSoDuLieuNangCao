@@ -5,7 +5,9 @@
             "type": "java",
             "name": "Chay Thuc Nghiem ObjectDB",
             "request": "launch",
-            "mainClass": "ThucNghiemObjectDB"
+            "mainClass": "ThucNghiemObjectDB",
+            "vmArgs": "-Dfile.encoding=UTF-8",
+            "console": "integratedTerminal"
         }
     ]
 }
